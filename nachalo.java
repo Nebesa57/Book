@@ -67,8 +67,7 @@ class s20 {
 
 class opera {
     public static void main(String[] args) {
-        int x, y, z;
-        x = y = z = 100;
+       
 
     }
 
