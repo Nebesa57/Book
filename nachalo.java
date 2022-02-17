@@ -1,4 +1,7 @@
+import java.util.Scanner;
 public class nachalo {
+
+
     public static void main(String[] args) {
 
         boolean b;
@@ -67,7 +70,44 @@ class s20 {
 
 class opera {
     public static void main(String[] args) {
-       
+        Scanner scan = new Scanner(System.in);
+        int a = 10;
+        //a = scan.nextInt();
+        if(a<2)
+        {
+            System.out.println("А равняется числу: <=1" );
+        }
+        if (a<4)
+        {
+            System.out.println("А равняется числу: <=3" );
+        }
+        if (a<6)
+        {
+            System.out.println("А равняется числу: <=5" );
+        }
+        else
+            System.out.println("А равняется числу: " + a);
+
+        int month;
+        String season = " ";
+        month = scan.nextInt();
+        if(month==12||month==1||month==2)
+            season = "Зима";
+        else if (month==3||month==4||month==5)
+            season = "Весна";
+        else if (month==6||month==7||month==8)
+            season = "Лето";
+        else if (month==9||month==10||month==11)
+            season = "Осень";
+        else
+            season = "Не существующий месяц";
+
+        System.out.println("Вы ввели месяц относящийся к: "+ season);
+
+
+
+
+
 
     }
 
