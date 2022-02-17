@@ -130,4 +130,34 @@ class str130 {
     }
 }
 
+class opredVrGodaVrs2{
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        int a = scanner.nextInt();
+        switch (a) {
+            case 1:
+            case 2:
+            case 12:
+                System.out.println("Время года Зима");
+                break;
+            case 3:
+            case 4:
+            case 5:
+                System.out.println("Время года Весна");
+                break;
+            case 6:
+            case 7:
+            case 8:
+                System.out.println("Время года Лета");
+            case 9:
+            case 10:
+            case 11:
+                System.out.println("Время когда Осень");
+                break;
+            default:
+                System.out.println("Вы ввели несуществующий месяц");
+        }
+    }
+}
+
 
