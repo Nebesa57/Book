@@ -1,4 +1,5 @@
 import java.util.Scanner;
+
 public class nachalo {
 
 
@@ -73,44 +74,60 @@ class opera {
         Scanner scan = new Scanner(System.in);
         int a = 10;
         //a = scan.nextInt();
-        if(a<2)
-        {
-            System.out.println("А равняется числу: <=1" );
+        if (a < 2) {
+            System.out.println("А равняется числу: <=1");
         }
-        if (a<4)
-        {
-            System.out.println("А равняется числу: <=3" );
+        if (a < 4) {
+            System.out.println("А равняется числу: <=3");
         }
-        if (a<6)
-        {
-            System.out.println("А равняется числу: <=5" );
-        }
-        else
+        if (a < 6) {
+            System.out.println("А равняется числу: <=5");
+        } else
             System.out.println("А равняется числу: " + a);
 
         int month;
         String season = " ";
         month = scan.nextInt();
-        if(month==12||month==1||month==2)
+        if (month == 12 || month == 1 || month == 2)
             season = "Зима";
-        else if (month==3||month==4||month==5)
+        else if (month == 3 || month == 4 || month == 5)
             season = "Весна";
-        else if (month==6||month==7||month==8)
+        else if (month == 6 || month == 7 || month == 8)
             season = "Лето";
-        else if (month==9||month==10||month==11)
+        else if (month == 9 || month == 10 || month == 11)
             season = "Осень";
         else
             season = "Не существующий месяц";
 
-        System.out.println("Вы ввели месяц относящийся к: "+ season);
-
-
-
-
+        System.out.println("Вы ввели месяц относящийся к: " + season);
 
 
     }
 
+}
+
+class str130 {
+    public static void main(String[] args) {
+
+        Scanner scan = new Scanner(System.in);
+                int a = scan.nextInt();
+                switch (a){
+                    case 0:
+                        System.out.println("a Равно 0" );
+                        break;
+                    case 1:
+                        System.out.println("a Равно 1");
+                        break;
+                    case 2:
+                        System.out.println("a Равно 2");
+                        break;
+                    default:
+                        System.out.println("A больше 3");
+                }
+
+
+
+    }
 }
 
 
