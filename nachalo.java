@@ -185,3 +185,57 @@ class dowhile {
     }
 }
 
+class oneMenu{
+
+    public static void main(String[] args)
+            throws java.io.IOException{
+        char m;
+        do{
+            System.out.println("Выберите интересующий цикл");
+            System.out.println("     1: if");
+            System.out.println("     2: while");
+            System.out.println("     3: switch");
+            System.out.println("     4: do-while");
+            System.out.println("     5: for/n");
+            System.out.println("Выберите нужный пункт");
+            m = (char) System.in.read();
+        }
+        while (m <'1'|| m >'5');
+        switch (m)
+        {
+            case '1':
+                System.out .println ( "if: \n");
+                System.out.println("if(ycлoвиe) оператор;");
+                System.out.println("else оператор;");
+                break;
+            case'2':
+                System.out.println("while:\n");
+                System.out.println("while(ycлoвиe) оператор;");
+                break;
+            case '3':
+                System.out.println("switch:\n");
+                System.out .println( "switсh(выражение) {");
+                System.out.println(" case константа:");
+                System.out.println(
+                        " последовательность операторов");
+                System.out.println(" break;");
+                System. out .println (" / / ... ");
+                System.out.println("}");
+                break;
+            case '4':
+                System.out.println("do-while:\n");
+                System.out.println("do {");
+                System.out.println(" оператор;");
+                System.out.println("} while (условие);");
+                break;
+            case '5':
+                System.out.println("for()");
+                break;
+
+
+
+        }
+
+
+    }
+}
