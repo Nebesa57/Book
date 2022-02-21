@@ -185,53 +185,84 @@ class dowhile {
     }
 }
 
-class oneMenu{
+class oneMenu {
 
     public static void main(String[] args)
-            throws java.io.IOException{
+            throws java.io.IOException {
         char m;
-     do{
-         System.out.println("Выберите время года, чтобы узнать какие месяца в него входят");
-         System.out.println("        1: Зима");
-         System.out.println("        2: Весна");
-         System.out.println("        3: Лето");
-         System.out.println("        4: Осень");
-         m = (char) System.in.read();
-     }
-     while (m<'1'||m>'5');
+        do {
+            System.out.println("Выберите время года, чтобы узнать какие месяца в него входят");
+            System.out.println("        1: Зима");
+            System.out.println("        2: Весна");
+            System.out.println("        3: Лето");
+            System.out.println("        4: Осень");
+            m = (char) System.in.read();
+        }
+        while (m < '1' || m > '5');
 
-     switch (m)
-     {
-         case '1':
-             System.out.println("В Зиму хводят такие месяца как: ");
-             System.out.println("Декабрь");
-             System.out.println("Январь");
-             System.out.println("Февраль");
-             break;
-         case '2':
-             System.out.println("В Весну хводят такие месяца как: ");
-             System.out.println("Март");
-             System.out.println("Апрель");
-             System.out.println("Май");
-             break;
-         case '3':
-             System.out.println("В Лето хводят такие месяца как: ");
-             System.out.println("Июнь");
-             System.out.println("Июль");
-             System.out.println("Август");
-             break;
-         case '4':
-             System.out.println("В Осень хводят такие месяца как: ");
-             System.out.println("Сентябрь");
-             System.out.println("Октябрь");
-             System.out.println("Ноябрь");
-             break;
-     }
-
+        switch (m) {
+            case '1':
+                System.out.println("В Зиму хводят такие месяца как: ");
+                System.out.println("Декабрь");
+                System.out.println("Январь");
+                System.out.println("Февраль");
+                break;
+            case '2':
+                System.out.println("В Весну хводят такие месяца как: ");
+                System.out.println("Март");
+                System.out.println("Апрель");
+                System.out.println("Май");
+                break;
+            case '3':
+                System.out.println("В Лето хводят такие месяца как: ");
+                System.out.println("Июнь");
+                System.out.println("Июль");
+                System.out.println("Август");
+                break;
+            case '4':
+                System.out.println("В Осень хводят такие месяца как: ");
+                System.out.println("Сентябрь");
+                System.out.println("Октябрь");
+                System.out.println("Ноябрь");
+                break;
+        }
 
 
+    }
+}
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+class zadac {
+    public static void main(String[] args) {
+        int h, s, w;
+        for (s = 0; s <= 5; s++) {
+            for (w=2;w>=s; w++)
+            for (h = 5; h >= s; h--) {
+                System.out.print("*");
+            }
+            System.out.println();
+        }
     }
 }
