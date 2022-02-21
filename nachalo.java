@@ -110,27 +110,26 @@ class str130 {
     public static void main(String[] args) {
 
         Scanner scan = new Scanner(System.in);
-                int a = scan.nextInt();
-                switch (a){
-                    case 0:
-                        System.out.println("a Равно 0" );
-                        break;
-                    case 1:
-                        System.out.println("a Равно 1");
-                        break;
-                    case 2:
-                        System.out.println("a Равно 2");
-                        break;
-                    default:
-                        System.out.println("A больше 3");
-                }
-
+        int a = scan.nextInt();
+        switch (a) {
+            case 0:
+                System.out.println("a Равно 0");
+                break;
+            case 1:
+                System.out.println("a Равно 1");
+                break;
+            case 2:
+                System.out.println("a Равно 2");
+                break;
+            default:
+                System.out.println("A больше 3");
+        }
 
 
     }
 }
 
-class opredVrGodaVrs2{
+class opredVrGodaVrs2 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         int a = scanner.nextInt();
@@ -160,4 +159,29 @@ class opredVrGodaVrs2{
     }
 }
 
+class while1 {
+    public static void main(String[] args) {
+        int a = 10;
+        while (a > 0) {
+            System.out.println("Цикл номер " + a);
+            a--;
+        }
+
+        int b = 100;
+        int c = 500;
+        while (++b < --c) ;
+        System.out.println(c + " " + b);
+    }
+}
+
+class dowhile {
+    public static void main(String[] args) {
+        int a = 10;
+        do {
+            System.out.println("Цыкл равен: " + a);
+            a--;
+        }
+        while (a > 0);
+    }
+}
 
