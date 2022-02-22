@@ -320,32 +320,29 @@ class brik {
     }
 }
 
-class contin{
+class contin {
     public static void main(String[] args) {
-        for(int i =0;i<10;i++)
-        {
-            System.out.print(i+" ");
-            if(i%2==0) continue;
-
-                System.out.println(" ");
+        for (int i = 0; i < 10; i++) {
+            System.out.print(i + " ");
+            if (i % 2 == 0) continue;
+            System.out.println(" ");
 
         }
     }
 }
 
 
-class metka
-{
+class metka {
     public static void main(String[] args) {
-        one: for(int a=0;a<10;a++){
-        for (int j =0;j<10;j++)
-        {
-            if(j>a){
-                System.out.println();
-                continue one;
+        one:
+        for (int a = 0; a < 10; a++) {
+            for (int j = 0; j < 10; j++) {
+                if (j > a) {
+                    System.out.println();
+                    continue one;
+                }
+                System.out.print(a * j + " ");
             }
-            System.out.print(a*j + " ");
-        }
         }
         System.out.println(" ");
     }
