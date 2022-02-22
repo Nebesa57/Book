@@ -279,19 +279,57 @@ class vihod {
 class vihod2 {
     public static void main(String[] args) {
         int a = 0;
-        while (a < 100) {
-            if (a == 10) break;
-            System.out.println("a = " + a);
-            a++;
+        int b = 0;
+        while (b < 3) {
+            System.out.println("Проход номер: " + b + " ");
+            b++;
+            while (a < 100) {
+                if (a == 10) break;
+                System.out.print("a = " + a + " ");
+                a++;
+            }
         }
     }
 }
 
-class Benk
-{
+class Benk {
     public static void main(String[] args) {
         oper Oper = new oper();
         System.out.println(Oper.balans);
+    }
+}
+
+class brik {
+    public static void main(String[] args) {
+        boolean t = true;
+        second:
+        {
+            two:
+            {
+
+                third:
+                {
+                    if (t) break two;
+
+                }
+            }
+            System.out.println("Вывод 3");
+        }
+
+
+    }
+}
+
+class contin{
+    public static void main(String[] args) {
+        for(int i =0;i<10;i++)
+        {
+            System.out.print(i+" ");
+            if(i%2==0) continue;
+
+                System.out.println(" ");
+
+        }
     }
 }
 
