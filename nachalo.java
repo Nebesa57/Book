@@ -232,7 +232,24 @@ class oneMenu {
 }
 
 
-
+class massss
+{
+    public static void main(String[] args) {
+        int isk = 5;
+        int mas[] = {1,2,3,4,6,7};
+        boolean end = false;
+        for(int x: mas) {
+            if (x == isk) {
+                end = true;
+                break;
+            }
+        }
+        if (end)
+            System.out.println("Число найдено");
+        else
+            System.out.println("Число не найдено");
+    }
+}
 
 
 
@@ -257,12 +274,17 @@ class oneMenu {
 class zadac {
     public static void main(String[] args) {
         int h, s, w;
-        for (s = 0; s <= 5; s++) {
-            for (w=2;w>=s; w++)
-            for (h = 5; h >= s; h--) {
+        for (s = 5; s >= 0; s--) {
+            for (w=0;w<=s; w++)
+            {
                 System.out.print("*");
             }
             System.out.println();
         }
     }
+}
+
+
+class vihod{
+    
 }
