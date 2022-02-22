@@ -286,3 +286,12 @@ class vihod2 {
         }
     }
 }
+
+class Benk
+{
+    public static void main(String[] args) {
+        oper Oper = new oper();
+        System.out.println(Oper.balans);
+    }
+}
+
