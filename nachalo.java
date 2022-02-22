@@ -232,13 +232,12 @@ class oneMenu {
 }
 
 
-class massss
-{
+class massss {
     public static void main(String[] args) {
         int isk = 5;
-        int mas[] = {1,2,3,4,6,7};
+        int mas[] = {1, 2, 3, 4, 6, 7};
         boolean end = false;
-        for(int x: mas) {
+        for (int x : mas) {
             if (x == isk) {
                 end = true;
                 break;
@@ -252,31 +251,11 @@ class massss
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 class zadac {
     public static void main(String[] args) {
         int h, s, w;
         for (s = 5; s >= 0; s--) {
-            for (w=0;w<=s; w++)
-            {
+            for (w = 0; w <= s; w++) {
                 System.out.print("*");
             }
             System.out.println();
@@ -285,6 +264,25 @@ class zadac {
 }
 
 
-class vihod{
-    
+class vihod {
+    public static void main(String[] args) {
+
+        for (int a = 0; a < 100; a++) {
+            if (a == 10) {
+                break;
+            }
+            System.out.println("a= " + a);
+        }
+    }
+}
+
+class vihod2 {
+    public static void main(String[] args) {
+        int a = 0;
+        while (a < 100) {
+            if (a == 10) break;
+            System.out.println("a = " + a);
+            a++;
+        }
+    }
 }
