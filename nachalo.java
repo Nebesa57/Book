@@ -333,3 +333,20 @@ class contin{
     }
 }
 
+
+class metka
+{
+    public static void main(String[] args) {
+        one: for(int a=0;a<10;a++){
+        for (int j =0;j<10;j++)
+        {
+            if(j>a){
+                System.out.println();
+                continue one;
+            }
+            System.out.print(a*j + " ");
+        }
+        }
+        System.out.println(" ");
+    }
+}
