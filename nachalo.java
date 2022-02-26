@@ -335,13 +335,13 @@ class contin {
 class metka {
     public static void main(String[] args) {
         one:
-        for (int a = 0; a < 10; a++) {
+        for (int a = 6; a < 10; a++) {
             for (int j = 0; j < 10; j++) {
                 if (j > a) {
                     System.out.println();
                     continue one;
                 }
-                System.out.print(a * j + " ");
+                System.out.print("a" + "b");
             }
         }
         System.out.println(" ");
@@ -485,4 +485,113 @@ class zadania {
             }
         }
     }
+}
+
+class clas
+{
+    public static void main(String[] args) {
+        class box{
+            int dlina;
+            int shirina;
+            int visota;
+
+            void volume()
+            {
+                System.out.println(dlina*shirina*visota);
+            }
+        }
+       box box1 = new box();
+        box box2 = new box();
+
+        box1.dlina=10;
+        box1.shirina=10;
+        box1.visota=10;
+
+
+        box2.dlina=20;
+        box2.shirina=20;
+        box2.visota=20;
+
+        box1.volume();
+
+        box2.volume();
+    }
+}
+
+
+class zadania2
+{
+
+    public static void main(String[] args) {
+        Scanner scan = new Scanner(System.in);
+        System.out.println("Введите высоту ");
+        int visota =  scan.nextInt();
+        System.out.println("Введите ширину: ");
+        int shirina = scan.nextInt();
+        System.out.println("Введите 4 буквы: ");
+        System.out.println(" ");
+        String a = "a";//scan.nextLine();
+        String b = "b";//scan.nextLine();
+        String c = "c";//scan.nextLine();
+        String d = "d";//scan.nextLine();
+        System.out.println(" ");
+        one:
+
+        for(int v =0; v<visota; v++)
+        {
+            for (int g=4;g<shirina;shirina--)
+            {
+                if(shirina%2==0)
+                {
+                    for(int s=0;s<shirina;s++) {
+                        System.out.print(a);
+                        System.out.print(b);
+                    }
+                    System.out.println(" ");
+                }
+                else
+                {
+                    for(int s=0;s<shirina;s++) {
+                        if(s%2==0)
+                        {
+                            System.out.print(c);
+                        }
+                        else
+                            System.out.print(d);
+                    }
+                    System.out.println(" ");
+
+                }
+            }
+        }
+    }
+}
+
+
+class  proba
+{
+    public static void main(String[] args) {
+        String a = "5";
+        System.out.println(a + a);
+
+    }
+        int squre ( int a)
+        {
+            return a * a;
+        }
+
+        void pask ()
+        {
+            System.out.println(squre(10));
+        }
+
+}
+class dva
+{
+    public static void main(String[] args) {
+        proba pro = new proba();
+        pro.squre(10);
+        System.out.print("");
+    }
+
 }
