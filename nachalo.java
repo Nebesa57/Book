@@ -347,3 +347,142 @@ class metka {
         System.out.println(" ");
     }
 }
+
+class zadania {
+    public static void main(String[] args) {
+        for (int a = 0; a < 10; a++) {
+            if (a % 2 == 0)
+                System.out.print("a");
+            else
+                System.out.print("b");
+        }
+        System.out.println(" ");
+        for (int a = 0; a < 10; a++) {
+            switch (a) {
+                case 1:
+                case 2:
+                    System.out.print("c");
+                    break;
+                case 3:
+                case 4:
+                    System.out.print("d");
+                    break;
+                case 5:
+                case 6:
+                    System.out.print("c");
+                    break;
+                case 7:
+                case 8:
+                    System.out.print("d");
+                    break;
+                case 9:
+                    System.out.print("c");
+                    break;
+            }
+        }
+        System.out.println(" ");
+        for (int a = 0; a < 10; a++) {
+            switch (a) {
+                case 1:
+                    System.out.print("b");
+                    break;
+
+                case 2:
+                    System.out.print("a");
+                    break;
+                case 3:
+                    System.out.print("b");
+
+                    break;
+                case 4:
+                    System.out.print("a");
+
+                    break;
+                case 5:
+                    System.out.print("b");
+
+                    break;
+                case 6:
+                    System.out.print("a");
+
+                    break;
+                case 7:
+                    System.out.print("b");
+
+                    break;
+                case 8:
+                    System.out.print("a");
+
+                    break;
+
+            }
+        }
+        System.out.println(" ");
+        for (int a = 0; a < 10; a++) {
+            switch (a) {
+                case 1:
+                case 2:
+                    System.out.print("d");
+
+                    break;
+                case 3:
+                case 4:
+                    System.out.print("c");
+
+                    break;
+                case 5:
+                case 6:
+                    System.out.print("d");
+                    break;
+                case 7:
+                    System.out.print("c");
+                    break;
+            }
+        }
+        System.out.println(" ");
+        for (int a = 0; a < 10; a++) {
+            switch (a) {
+                case 1:
+                    System.out.print("a");
+                    break;
+                case 2:
+                    System.out.print("b");
+                    break;
+                case 3:
+                    System.out.print("a");
+
+                    break;
+                case 4:
+                    System.out.print("b");
+
+                    break;
+                case 5:
+                    System.out.print("a");
+
+                    break;
+                case 6:
+                    System.out.print("b");
+
+                    break;
+            }
+        }
+        System.out.println(" ");
+
+        for (int a = 0; a < 10; a++) {
+            switch (a) {
+                case 1:
+                case 2:
+                    System.out.print("c");
+                    break;
+                case 3:
+                case 4:
+                    System.out.print("d");
+                    break;
+                case 5:
+                    System.out.print("c");
+                    break;
+
+            }
+        }
+    }
+}
