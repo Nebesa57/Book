@@ -595,3 +595,35 @@ class dva
     }
 
 }
+
+class box
+{
+    double dlina;
+    double visota;
+    double shirina;
+
+    double raschet()
+    {
+        return dlina*visota*shirina;
+    }
+
+
+    box(double d,double v, double s)
+    {
+        this.dlina = d;
+        this.visota = v;
+        this.shirina = s;
+    }
+
+
+    public static void main(String[] args) {
+
+        box box1 = new box(10,20,30);
+        box box2=new box(20,30,40);
+
+        System.out.println(box1.raschet());
+        System.out.println(box2.raschet());
+
+    }
+}
+
