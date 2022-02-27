@@ -722,7 +722,7 @@ class bell
         stack sta1 = new stack();
         stack sta2 = new stack();
 
-        
+
         for(int a=0; a<10; a++) sta1.push(a);
         for (int a=0;a<20;a++) sta2.push(a);
 
