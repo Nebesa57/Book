@@ -627,3 +627,110 @@ class box
     }
 }
 
+ /*   class zadackaa() {
+
+
+    public static void main(String[] args) {
+        Scanner in = new Scanner(System.in);
+        double sum = 0.0D;
+        int N = 0;
+        boolean R1 = true;
+        boolean R2 = true;
+        double x = 1.0D;
+        System.out.print("Введите количество элементов n: ");
+        int n = in.nextInt();
+        System.out.print("Введите точность eps: ");
+        double eps = in.nextDouble();
+        double a = x;
+        double a_n = x;
+
+        do {
+            sum += a;
+            a = a_n * (-x * (double)(2 * N + 1) / (double)(2 * N + 3));
+            a_n = a;
+            ++N;
+        } while(N < n);
+
+        System.out.print("Сумма n членов ряда равна: " + sum);
+        sum = 0.0D;
+        a = x;
+        a_n = x;
+        N = 0;
+
+        do {
+            sum += a;
+            a = a_n * (-x * (double)(2 * N + 1) / (double)(2 * N + 3));
+            a_n = a;
+            ++N;
+        } while(Math.abs(a) > eps);
+
+        System.out.print("\nСумма членов ряда > eps равна: " + sum);
+        sum = 0.0D;
+        a = x;
+        a_n = x;
+        N = 0;
+
+        do {
+            sum += a;
+            a = a_n * (-x * (double)(2 * N + 1) / (double)(2 * N + 3));
+            a_n = a;
+            ++N;
+        } while(Math.abs(a) > eps / 10.0D);
+
+        System.out.print("\nСумма членов ряда > eps/10 равна: " + sum);
+        System.out.print("\narctg(x): " + Math.atan(x));
+    }
+}*/
+
+
+
+class stack
+{
+    int stck[] = new int[10];
+    int re;
+
+    stack()
+    {
+        re = -1;
+    }
+
+    void push(int item) {
+        if (re == 9)
+        {
+            System.out.println("Стек заполнен");
+        }
+        else
+            stck[re++]= item;
+    }
+    int pop()
+    {
+        if(re==0)
+        {
+            System.out.println("Стек не загружен");
+            return 0;
+        }
+        else
+        {
+            return stck[re--];
+        }
+    }
+}
+
+class bell
+{
+    public static void main(String[] args) {
+        stack sta1 = new stack();
+        stack sta2 = new stack();
+
+        
+        for(int a=0; a<10; a++) sta1.push(a);
+        for (int a=0;a<20;a++) sta2.push(a);
+
+        for(int a=0; a<10; a++) System.out.print(sta1.pop());
+        for(int a=0; a<10; a++) System.out.print(sta2.pop());
+
+
+    }
+}
+
+
