@@ -1,4 +1,5 @@
 import java.util.Scanner;
+import java.util.Stack;
 
 public class nachalo {
 
@@ -686,51 +687,13 @@ class box
 
 class stack
 {
-    int stck[] = new int[10];
-    int re;
-
-    stack()
-    {
-        re = -1;
-    }
-
-    void push(int item) {
-        if (re == 9)
-        {
-            System.out.println("Стек заполнен");
-        }
-        else
-            stck[re++]= item;
-    }
-    int pop()
-    {
-        if(re==0)
-        {
-            System.out.println("Стек не загружен");
-            return 0;
-        }
-        else
-        {
-            return stck[re--];
-        }
-    }
-}
-
-class bell
-{
     public static void main(String[] args) {
-        stack sta1 = new stack();
-        stack sta2 = new stack();
-
-
-        for(int a=0; a<10; a++) sta1.push(a);
-        for (int a=0;a<20;a++) sta2.push(a);
-
-        for(int a=0; a<10; a++) System.out.print(sta1.pop());
-        for(int a=0; a<10; a++) System.out.print(sta2.pop());
-
-
+        Stack steck = new Stack();
+        steck.push(1234);
+        if(!steck.empty())
+        {
+            System.out.println(steck.pop());
+        }
     }
 }
-
 
