@@ -488,30 +488,28 @@ class zadania {
     }
 }
 
-class clas
-{
+class clas {
     public static void main(String[] args) {
-        class box{
+        class box {
             int dlina;
             int shirina;
             int visota;
 
-            void volume()
-            {
-                System.out.println(dlina*shirina*visota);
+            void volume() {
+                System.out.println(dlina * shirina * visota);
             }
         }
-       box box1 = new box();
+        box box1 = new box();
         box box2 = new box();
 
-        box1.dlina=10;
-        box1.shirina=10;
-        box1.visota=10;
+        box1.dlina = 10;
+        box1.shirina = 10;
+        box1.visota = 10;
 
 
-        box2.dlina=20;
-        box2.shirina=20;
-        box2.visota=20;
+        box2.dlina = 20;
+        box2.shirina = 20;
+        box2.visota = 20;
 
         box1.volume();
 
@@ -520,13 +518,12 @@ class clas
 }
 
 
-class zadania2
-{
+class zadania2 {
 
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
         System.out.println("Введите высоту ");
-        int visota =  scan.nextInt();
+        int visota = scan.nextInt();
         System.out.println("Введите ширину: ");
         int shirina = scan.nextInt();
         System.out.println("Введите 4 буквы: ");
@@ -538,26 +535,19 @@ class zadania2
         System.out.println(" ");
         one:
 
-        for(int v =0; v<visota; v++)
-        {
-            for (int g=4;g<shirina;shirina--)
-            {
-                if(shirina%2==0)
-                {
-                    for(int s=0;s<shirina;s++) {
+        for (int v = 0; v < visota; v++) {
+            for (int g = 4; g < shirina; shirina--) {
+                if (shirina % 2 == 0) {
+                    for (int s = 0; s < shirina; s++) {
                         System.out.print(a);
                         System.out.print(b);
                     }
                     System.out.println(" ");
-                }
-                else
-                {
-                    for(int s=0;s<shirina;s++) {
-                        if(s%2==0)
-                        {
+                } else {
+                    for (int s = 0; s < shirina; s++) {
+                        if (s % 2 == 0) {
                             System.out.print(c);
-                        }
-                        else
+                        } else
                             System.out.print(d);
                     }
                     System.out.println(" ");
@@ -569,26 +559,24 @@ class zadania2
 }
 
 
-class  proba
-{
+class proba {
     public static void main(String[] args) {
         String a = "5";
         System.out.println(a + a);
 
     }
-        int squre ( int a)
-        {
-            return a * a;
-        }
 
-        void pask ()
-        {
-            System.out.println(squre(10));
-        }
+    int squre(int a) {
+        return a * a;
+    }
+
+    void pask() {
+        System.out.println(squre(10));
+    }
 
 }
-class dva
-{
+
+class dva {
     public static void main(String[] args) {
         proba pro = new proba();
         pro.squre(10);
@@ -597,20 +585,17 @@ class dva
 
 }
 
-class box
-{
+class box {
     double dlina;
     double visota;
     double shirina;
 
-    double raschet()
-    {
-        return dlina*visota*shirina;
+    double raschet() {
+        return dlina * visota * shirina;
     }
 
 
-    box(double d,double v, double s)
-    {
+    box(double d, double v, double s) {
         this.dlina = d;
         this.visota = v;
         this.shirina = s;
@@ -619,8 +604,8 @@ class box
 
     public static void main(String[] args) {
 
-        box box1 = new box(10,20,30);
-        box box2=new box(20,30,40);
+        box box1 = new box(10, 20, 30);
+        box box2 = new box(20, 30, 40);
 
         System.out.println(box1.raschet());
         System.out.println(box2.raschet());
@@ -684,16 +669,47 @@ class box
 }*/
 
 
-
-class stack
-{
+class stack {
     public static void main(String[] args) {
         Stack steck = new Stack();
         steck.push(1234);
-        if(!steck.empty())
-        {
+        if (!steck.empty()) {
             System.out.println(steck.pop());
         }
     }
 }
 
+class peregr {
+    void test() {
+        System.out.println("ERROR");
+    }
+
+    void test(int a)
+    {
+        System.out.println("a:="+a);
+    }
+
+
+    void test(int a, int b) {
+        System.out.println("a b:=" + a + " " + b);
+    }
+
+void test(double a)
+{
+    System.out.println("a:=" + a);
+}
+
+}
+class Overlad
+{
+    public static void main(String[] args) {
+        peregr ob = new peregr();
+        int i = 88;
+        ob.test(10,20);
+        ob.test(12.123);
+        ob.test(i);
+
+    }
+    
+
+}
