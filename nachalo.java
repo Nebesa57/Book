@@ -684,9 +684,8 @@ class peregr {
         System.out.println("ERROR");
     }
 
-    void test(int a)
-    {
-        System.out.println("a:="+a);
+    void test(int a) {
+        System.out.println("a:=" + a);
     }
 
 
@@ -694,22 +693,84 @@ class peregr {
         System.out.println("a b:=" + a + " " + b);
     }
 
-void test(double a)
-{
-    System.out.println("a:=" + a);
-}
+    void test(double a) {
+        System.out.println("a:=" + a);
+    }
 
 }
-class Overlad
-{
+
+class Overlad {
     public static void main(String[] args) {
         peregr ob = new peregr();
         int i = 88;
-        ob.test(10,20);
+        ob.test(10, 20);
         ob.test(12.123);
         ob.test(i);
 
     }
 
 
+}
+
+
+class BOOX {
+    double a;
+    double v;
+    double c;
+
+    BOOX(double ac, double vc, double cc) {
+        a = ac;
+        v = vc;
+        c = cc;
+    }
+
+    BOOX(double len) {
+        a = v = c = len;
+    }
+
+    BOOX() {
+        a = -1;
+        v = -1;
+        c = -1;
+    }
+
+    double volueme() {
+        return a * v * c;
+    }
+
+    public static void main(String[] args) {
+        BOOX box1 = new BOOX(8, 9, 10);
+        BOOX box2 = new BOOX(3);
+        BOOX box3 = new BOOX();
+
+        System.out.println(box1.volueme());
+        System.out.println(box2.volueme());
+        System.out.println(box3.volueme());
+
+    }
+
+
+}
+
+class facrial
+{
+
+    int fackt(int n)
+    {
+        int result;
+        if(n==1)
+        {
+            return 1;
+        }
+        else
+            result = n * fackt(n-1);
+        return result;
+    }
+
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        facrial f = new facrial();
+        System.out.println(f.fackt(5));
+
+    }
 }
